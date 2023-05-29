@@ -1,7 +1,8 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
 const copia = document.querySelector(".btn-copiar");
-
+const texto1 =document.querySelector("texto1")
+const texto2 =document.querySelector("texto2")
 
 copia.style.display = "none"
 
@@ -33,6 +34,7 @@ function btnnEncriptar() {
     mensaje.style.backgroundImage = "none";
     textArea.value = "";
     copia.style.display = "block";
+    ocultarTextos();
 
 }
 
@@ -78,3 +80,11 @@ function copiar (){
     alert("Texto Copiado")
 } 
 
+function ocultarTextos(){
+
+    let texto1 = document.getElementById("texto1");
+    let texto2 = document.getElementById("texto2");
+    console.log(texto1);
+    texto1.textContent ="";
+    texto2.textContent ="";
+}

@@ -29,6 +29,7 @@ main{
     margin-top: 90px;
     padding: 2px;
     text-transform: lowercase;
+    resize: none;
 }
 
 ::placeholder { color: #0a3871;}
@@ -49,6 +50,7 @@ main{
     margin-top: 20px;
     padding-left: 20px;
     position: fixed;
+    resize: none;
    
 }
 
@@ -58,7 +60,7 @@ main{
 
 }
 
-.informacion1,h3{
+#texto1{
 
 background: none;
 background-repeat: no-repeat;
@@ -77,12 +79,13 @@ top: 60%;
 
 }
 
-.informacion1,h3:focus{
+#texto1focus{
     outline: none;
+    display: none;
     
 }
 
-.informacion1,p{
+#texto2{
 
     background: none;
 background-repeat: no-repeat;
@@ -101,8 +104,9 @@ top: 65%;
 
 }
 
-.informacion1,p:focus{
+#texto2:focus{
     outline: none;
+    display: none;
     
 }
     
