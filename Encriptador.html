@@ -3,48 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+    <title>EncriptadorTata</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
+	
+
 </head>
 
 <body>
 
     <header>
-        <img src="Imagenes/Logo.png" alt = "logo de alura" class="logo">  
+        <img src="./Imagenes/Logo.png" alt = "logo de alura" class="logo">  
 
     </header>
 
     <main>
         <section>
-             <textarea class= "text-area" cols="30" rows="10" placeholder="Ingrese texto aqui"></textarea>
+             <textarea class= "text-area" cols="30" rows="10" placeholder="Ingrese texto aquí"></textarea>
              <div>
-                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                <h6 class="informacion"> &#10086; Solo letras minúsculas y sin acentos</h6>
              </div>
 
              <div class="botones">
-                <button class="btn-encriptar" onclick = "btnEncriptar()"> Encriptar
+                <button class="btnEncriptar" onClick= "btnnEncriptar()"> Encriptar
                 </button>
 
-                <button class="btn-desencriptar" onclick = "btnDesencriptar()"> Desencriptar
+                <button class="btnDesencriptar" onClick = "btnnDesencriptar()"> Desencriptar
                 </button>
              </div>
 
         </section>
 
         <section>
-          <textarea class= "mensaje" cols="30" rows="10"></textarea>
+
+          <textarea class= "mensaje" cols="30" rows="10"> 
+
+            
+          </textarea>
+          
+          <div class="texto1">
+            <h3>Ningún mensajes fue encontrado</h3>
+            <p>Ingrese el texto que desee encriptar o <br> desencriptar</p>
+         </div>
+         
              <div>
-                    <button class="btn-copiar">Copiar
+                    <button class="btn-copiar" onclick="copiar ()">Copiar
                     </button>
              </div>
+
         </section>
        
     </main>
-    <script> src= "/script.js"</script>
+    <script src="script.js"></script>
 </body>
 
 </html>
